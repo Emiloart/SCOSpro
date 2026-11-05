@@ -1,266 +1,143 @@
 # SCOS Pro
 
-**SCOS Pro (Smart Chief of Staff Pro)** is a persistent autonomous operating layer for a person's digital life.
+**An independent intelligence and execution platform for individuals and organizations.**
 
-It is designed to move beyond reactive AI assistants. SCOS Pro continuously understands the user's operational context, identifies what requires attention, plans work, executes permitted actions across connected systems, and escalates decisions that require human judgment.
+SCOS Pro is being built as a persistent operating layer that understands intent, observes authorized environments, conducts research, deliberates across distinct perspectives, coordinates specialist agents and models, executes permitted work, verifies outcomes, and proactively communicates what matters.
 
-> **The user becomes the supervisor, not the operator.**
+It is not a chatbot with integrations attached. The conversational interface is one surface of a larger autonomous system.
 
-## Vision
+> **Understand the objective. Deliberate on the best course. Coordinate the work. Verify the outcome. Surface what matters.**
 
-Professional digital life is fragmented across email, calendars, documents, communication systems, subscriptions, finances, research tools, and SaaS applications.
+## Product Direction
 
-SCOS Pro is being built as the orchestration layer above those systems.
+SCOS Pro is designed to operate across a person's and an organization's digital life, not a narrow productivity category.
 
 It should be able to:
 
-- manage and triage email
-- coordinate calendars and meetings
-- prepare and maintain documents
-- conduct continuous research
-- monitor subscriptions and recurring commitments
-- analyze financial activity
-- identify inefficient patterns
-- prepare decisions and recommendations
-- execute authorized operational tasks
-- maintain persistent context across workflows
-- ask for human intervention only when policy, risk, or uncertainty requires it
+- manage email, calendars, meetings, documents, tasks, and subscriptions
+- analyze financial and operational information within authorized boundaries
+- conduct and continuously refresh research
+- identify patterns, risks, inconsistencies, opportunities, and bottlenecks
+- interpret business objectives and turn them into executable plans
+- commission software and application development through specialist engineering systems
+- coordinate people, models, agents, tools, and enterprise applications
+- deliberate through multiple governance councils with different analytical mandates
+- make evidence-backed recommendations and decisions
+- execute authorized workflows and independently verify their outcomes
+- proactively communicate with the user or the responsible person in an organization without waiting to be summoned
 
-SCOS Pro is not intended to be another chat interface with integrations attached. The core product is **persistent context + durable workflows + controlled autonomy + cross-system execution**.
+Software development is one delegated capability, not the product boundary.
 
-## Product Model
+## Independence and Interoperability
 
-SCOS Pro operates through five layers:
+SCOS Pro is intended to become an independent AI platform with ownership of its orchestration, governance, policy, memory, model gateway, evaluation, execution, and eventually proprietary model research and inference.
 
-1. **Observe** — ingest permitted signals from the user's digital environment.
-2. **Understand** — construct current context, memory, relationships, priorities, and constraints.
-3. **Plan** — determine what should happen and why.
-4. **Act** — execute approved actions through typed, scoped tools and durable workflows.
-5. **Escalate** — request human approval when the action exceeds policy, risk, confidence, or authority thresholds.
+Independence does not mean isolation. SCOS Pro must cooperate with external model providers and specialist systems while retaining control of the objective, authority, and overall workflow.
 
-This creates a continuous operating loop rather than a prompt-response loop.
+- **Celetixo** is the specialist autonomous software-engineering system. SCOS can delegate bounded software objectives, receive progress and artefacts, and independently validate delivery.
+- **UTB** is the specialist continuous research and intelligence system. SCOS can commission research, subscribe to monitored topics, and consume source-backed findings and change alerts.
+- **External models** provide bounded capabilities such as reasoning, coding, multimodal analysis, extraction, and independent critique. They are interchangeable providers, not SCOS's governing authority.
 
-## Core Principles
+These remain distinct systems connected through explicit, versioned capability contracts.
 
-### Persistent, not session-bound
+## Multi-Council Deliberation
 
-The system maintains durable operational context across days, weeks, and long-running workflows.
+Important decisions must not depend on one model's first response.
 
-### Autonomous, not merely assistive
+SCOS convenes task-appropriate councils with different mandates, such as:
 
-SCOS Pro is expected to complete work, not simply describe how a user could complete it.
+- intent and context
+- strategy and outcomes
+- technical feasibility
+- safety, security, and privacy
+- legal and compliance review
+- finance and resource allocation
+- user and stakeholder impact
+- adversarial challenge
+- synthesis
 
-### Policy before action
+The councils share the goal of finding the best justified course of action. They independently assess evidence, challenge assumptions, compare options, preserve dissent, and produce a structured decision record.
 
-No model should have unrestricted authority over a user's connected accounts.
+Councils recommend. They do not grant themselves authority or execute production actions.
 
-Every consequential action passes through explicit authorization, policy, risk, and audit controls.
+## The Operating Loop
 
-### Human control remains explicit
+```text
+Observe → Detect → Interpret → Investigate → Deliberate
+   → Decide → Authorize → Coordinate → Execute
+   → Verify → Communicate → Learn
+```
 
-Users define what SCOS Pro may observe, recommend, draft, execute automatically, or execute only after approval.
+Proactive operation is a core capability. SCOS should identify material developments and route them to the right person, with evidence, urgency, recommended action, and clear authority boundaries.
 
-### Provider-independent intelligence
+## Core Architecture
 
-The system is designed around a model router rather than a single model vendor.
+SCOS is organized around:
 
-### Global from the beginning
+1. **Experience:** web, mobile, browser, command interface, approvals, briefings.
+2. **Control:** identity, tenancy, intent, governance, policy, model routing, capability registry, audit.
+3. **Intelligence:** models, councils, research, memory, retrieval, evaluation, proprietary model lifecycle.
+4. **Execution:** durable workflows, specialist agents, connectors, browser workers, notifications.
+5. **Trust:** authorization, privacy, security, verification, provenance, and compliance controls.
 
-The architecture assumes multi-region deployment, international users, enterprise identity, data residency requirements, localization, and regional provider differences.
+## Technology Direction
 
-## Target Capabilities
+The current proposed baseline is:
 
-| Domain | Initial capability |
-| --- | --- |
-| Email | Triage, prioritization, drafting, follow-ups, thread intelligence |
-| Calendar | Scheduling, rescheduling, conflict resolution, meeting preparation |
-| Documents | Drafting, review, transformation, organization, artifact generation |
-| Research | Continuous monitoring, synthesis, source tracking, intelligence briefs |
-| Finance | Subscription monitoring, recurring-cost analysis, financial summaries |
-| Tasks | Planning, prioritization, delegation, execution tracking |
-| Memory | Preferences, decisions, relationships, episodic and semantic context |
-| Automation | Durable multi-step workflows with retries and approval gates |
-| Intelligence | Pattern detection, anomaly identification, operational recommendations |
-| Governance | Policies, permissions, approvals, audit history, action ledger |
-
-## Architecture
-
-SCOS Pro is organized into three major planes.
-
-### Experience Plane
-
-- Next.js
-- React
-- TypeScript
-- React Native + Expo
-- Browser extension
-- Approval inbox
-- Notifications
-- User-facing activity and audit views
-
-### Control Plane
-
-- Identity and tenant management
-- Connector authorization
-- Policy engine
-- Approval engine
-- Workflow orchestration
-- Model routing
-- Memory management
-- Audit and action ledger
-- Billing and entitlements
-
-### Execution Plane
-
-- Provider connectors
-- Email workers
-- Calendar workers
-- Document processing
-- Research workers
-- Financial analysis workers
-- Browser automation where permitted
-- AI inference
-- Retrieval
-- Background jobs
-
-See [docs/BUILD.md](docs/BUILD.md) for the complete architecture and implementation plan.
-
-## Technology Baseline
-
-| Layer | Technology |
+| Area | Direction |
 | --- | --- |
 | Web | Next.js, React, TypeScript |
 | Mobile | React Native, Expo |
-| Browser | Plasmo, TypeScript |
-| Edge | Cloudflare |
-| Cloud | AWS |
-| Compute | Kubernetes / Amazon EKS |
-| Workflow | Temporal Cloud |
-| Event bus | NATS JetStream |
-| Cache | Redis |
-| Primary database | CockroachDB |
-| Object storage | Amazon S3 |
-| Full-text search | OpenSearch |
-| Vector retrieval | Qdrant |
-| Analytics | ClickHouse Cloud |
-| Observability | OpenTelemetry, Grafana, Sentry |
-| Identity | WorkOS + application authorization layer |
-| Billing | Stripe |
-| AI | Multi-model routing: OpenAI, Anthropic, Google |
-| Infrastructure | Terraform/OpenTofu, Helm, Argo CD |
+| Browser | TypeScript extension |
+| Core services | TypeScript for product/control APIs; Python for research, model lifecycle, and data/AI workloads; Rust or Go only where measured requirements justify them |
+| Cloud and edge | AWS foundation with Cloudflare edge |
+| Durable workflows | Temporal |
+| Events | NATS JetStream, introduced when asynchronous fan-out requires it |
+| Transactional state | PostgreSQL-compatible relational system; final engine selected through workload and regional-consistency tests |
+| Object storage | S3-compatible object storage |
+| Search | lexical + vector hybrid retrieval, selected behind internal interfaces |
+| Model gateway | internally owned, multi-provider and self-hosted capable |
+| Inference | external APIs initially; self-hosted open-weight inference as an independence milestone |
+| Model research | Python ecosystem, reproducible datasets, training/evaluation pipelines, GPU orchestration |
+| Observability | OpenTelemetry with vendor-neutral traces, metrics, and logs |
+| Identity | OIDC/OAuth, passkeys, enterprise SSO/SCIM integration |
+| Infrastructure | Terraform/OpenTofu, containers, Kubernetes when justified by workload scale |
 | CI | GitHub Actions |
 
-The stack is intentionally modular. Individual infrastructure providers can be replaced behind internal interfaces without redesigning the product.
+This is a direction, not a mandate to deploy every named technology on day one. Infrastructure choices must be validated against operational complexity, regional requirements, cost, and measured workload.
 
-## Security Model
+## Authority and Safety
 
-SCOS Pro will treat connected accounts as high-value security boundaries.
+SCOS Pro enforces a strict separation:
 
-The platform will use:
+- **Models and agents propose.**
+- **Councils deliberate and recommend.**
+- **Policy and authorized human principals determine permission.**
+- **Durable workflows execute.**
+- **Independent verifiers establish outcomes.**
+- **Audit records preserve evidence.**
 
-- scoped OAuth grants
-- encrypted credential/token storage
-- KMS-backed envelope encryption
-- tenant isolation
-- region-aware data placement
-- explicit action policies
-- approval gates for consequential actions
-- immutable audit records
-- idempotent action execution
-- workflow-level retries and compensation
-- tool allowlists
-- structured tool schemas
-- model output validation
-- continuous security testing
+Autonomy is progressive and policy-gated. Connected credentials are never handed to models as unrestricted authority. Untrusted emails, documents, websites, and agent outputs remain data, not instructions.
 
-The AI model does not receive unrestricted credentials and does not directly own business authority.
+## Repository
 
-**Models propose. Policies authorize. Workflows execute. Audit records prove what happened.**
+The repository is the source of truth for the product constitution, architecture, governance, integration contracts, and implementation milestones.
 
-## Autonomy Levels
+- [Product Constitution](docs/PRODUCT_CONSTITUTION.md)
+- [Build Architecture](docs/BUILD.md)
+- [Council Governance](docs/COUNCIL_GOVERNANCE.md)
+- [Interoperability](docs/INTEROPERABILITY.md)
+- [Proactive Operations](docs/PROACTIVE_OPERATIONS.md)
+- [Audit and Execution Roadmap](docs/EXECUTION_ROADMAP.md)
 
-SCOS Pro will support progressive autonomy:
+## Current Status
 
-- **Observe** — read and analyze, no external action.
-- **Draft** — prepare an action without executing it.
-- **Approve** — propose an action and wait for the user.
-- **Bounded autonomy** — automatically execute actions explicitly covered by policy.
-- **Delegated autonomy** — execute multi-step workflows within defined financial, operational, temporal, and system boundaries.
+**Architecture correction and foundation execution.**
 
-Autonomy is therefore a configurable security boundary, not a model setting.
+The repository began as a documentation-only baseline. The current milestone is to formalize the expanded product direction and establish versioned domain contracts before building services. No production capability should be described as implemented until code, tests, operational evidence, and acceptance criteria demonstrate it.
 
-## Repository Direction
+## Long-Term Objective
 
-The project is currently at the architecture-definition stage. The implementation will be developed incrementally around stable domain boundaries.
+SCOS Pro should become a trusted independent intelligence and execution platform: capable of developing its own models, collaborating with the strongest external systems, coordinating multiple perspectives, and carrying authorized objectives through to verified outcomes.
 
-Planned top-level structure:
-
-```text
-SCOSpro/
-├── apps/
-│   ├── web/
-│   ├── mobile/
-│   └── extension/
-├── services/
-│   ├── api/
-│   ├── router/
-│   ├── policy/
-│   ├── memory/
-│   ├── search/
-│   ├── workflow-worker/
-│   ├── research/
-│   ├── document-intelligence/
-│   └── connectors/
-│       ├── google/
-│       └── microsoft/
-├── packages/
-│   ├── domain/
-│   ├── sdk/
-│   ├── ui/
-│   └── config/
-├── infra/
-│   ├── terraform/
-│   ├── kubernetes/
-│   └── helm/
-├── docs/
-│   └── BUILD.md
-└── .github/
-    └── workflows/
-```
-
-## Development Philosophy
-
-SCOS Pro will be built as infrastructure, not as a collection of AI demos.
-
-That means:
-
-- domain contracts before UI coupling
-- deterministic workflows around nondeterministic models
-- explicit state machines for consequential operations
-- provider adapters behind stable interfaces
-- tests around every autonomous action
-- observability attached to every workflow
-- reproducible infrastructure
-- security controls designed before integrations become deeply coupled
-- model providers treated as replaceable dependencies
-
-## Status
-
-**Architecture / foundation phase**
-
-The repository currently contains the project definition and technical architecture. Implementation will proceed from the contracts and infrastructure documented in [docs/BUILD.md](docs/BUILD.md).
-
-## Long-Term Direction
-
-SCOS Pro is intended to become a general-purpose **personal operational layer** for knowledge workers and organizations.
-
-The long-term system should not require users to constantly ask:
-
-> "What should I do next?"
-
-It should understand the operational state of their digital environment, identify what matters, execute what it is authorized to execute, and bring the user only the decisions that genuinely require them.
-
----
-
-**SCOS Pro**  
-Persistent intelligence. Controlled autonomy. One operational layer.
+**Independent in its core. Interoperable by design. Proactive by mandate. Governed at every action.**
