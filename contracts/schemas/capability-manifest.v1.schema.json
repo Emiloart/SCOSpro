@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scos.pro/schemas/capability-manifest.v1.schema.json",
+  "title": "SCOS Capability Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "provider_id", "provider_type", "capabilities", "trust_tier", "manifest_version"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "provider_id": { "type": "string" },
+    "provider_type": { "enum": ["agent", "model", "tool", "research_system", "engineering_system", "enterprise_service"] },
+    "display_name": { "type": "string" },
+    "manifest_version": { "type": "string" },
+    "trust_tier": { "enum": ["unverified", "reviewed", "approved", "internal"] },
+    "capabilities": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["capability_id", "version", "input_schema_ref", "output_schema_ref", "risk_class"], "properties": { "capability_id": { "type": "string" }, "version": { "type": "string" }, "description": { "type": "string" }, "input_schema_ref": { "type": "string" }, "output_schema_ref": { "type": "string" }, "risk_class": { "enum": ["read", "low_mutation", "external_mutation", "consequential", "critical"] }, "required_scopes": { "type": "array", "items": { "type": "string" } }, "data_classifications": { "type": "array", "items": { "enum": ["public", "internal", "confidential", "restricted"] } }, "allowed_regions": { "type": "array", "items": { "type": "string" } }, "supports_cancellation": { "type": "boolean" }, "supports_idempotency": { "type": "boolean" }, "evidence_contract": { "type": "string" } } } },
+    "authentication": { "type": "object", "additionalProperties": false, "properties": { "method": { "enum": ["oauth2", "oidc", "mtls", "signed_webhook", "service_identity", "none"] }, "issuer": { "type": "string" }, "scopes": { "type": "array", "items": { "type": "string" } } } },
+    "data_handling_url": { "type": "string", "format": "uri" },
+    "support_contact": { "type": "string" },
+    "health_endpoint": { "type": "string", "format": "uri" }
+  }
+}
