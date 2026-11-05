@@ -60,6 +60,12 @@ The councils share the goal of finding the best justified course of action. They
 
 Councils recommend. They do not grant themselves authority or execute production actions.
 
+## Governance and Strategic Authority
+
+SCOS separates constitutional constraints, human-authored strategic objectives, versioned operational policy and delegated authority. Task-appropriate councils produce evidence-backed assessments; independent verification checks their premises and rule applicability; deterministic policy applies trusted scope, action-risk profiles and the active ratified Strategic Policy Manifest (SPM). Unranked objective conflicts are escalated rather than inferred. SCOS may challenge and recommend changes to objectives, but cannot silently adopt them or promote policy changes.
+
+The architecture explicitly distinguishes mandatory invariant failures from advisory findings. Model consensus, silence, timeout or unavailable reviewers cannot grant permission. The SPM is a policy artifact, not an execution grant.
+
 ## The Operating Loop
 
 ```text
@@ -126,6 +132,7 @@ The repository is the source of truth for the product constitution, architecture
 - [Product Constitution](docs/PRODUCT_CONSTITUTION.md)
 - [Build Architecture](docs/BUILD.md)
 - [Council Governance](docs/COUNCIL_GOVERNANCE.md)
+- [Strategic Policy, Authority and Scope Governance](docs/STRATEGIC_POLICY_GOVERNANCE.md)
 - [Interoperability](docs/INTEROPERABILITY.md)
 - [Proactive Operations](docs/PROACTIVE_OPERATIONS.md)
 - [Audit and Execution Roadmap](docs/EXECUTION_ROADMAP.md)
@@ -135,7 +142,7 @@ The repository is the source of truth for the product constitution, architecture
 
 **Architecture correction and initial contract foundation.**
 
-The repository now contains the expanded product constitution, governance and federation specifications, proactive operations model, execution roadmap, initial architecture decision records, six versioned JSON Schema contracts, and a Node-based schema compilation validator. The validator has been committed but has not yet been run in a local environment. No production capability or integration should be described as implemented until code, tests, operational evidence, and acceptance criteria demonstrate it.
+The repository contains the product constitution, council and federation specifications, proactive operations model, strategic policy governance specification, seven proposed architecture decision records, six initial versioned JSON Schema contracts, and a Node-based schema compilation validator. The latest governance documents specify intended architecture; the scope classifier, SPM enforcement, argument verifier, policy resolver and execution controls are not implemented. The validator has been committed but has not yet been run in a local environment. No production capability or integration should be described as implemented until code, tests, operational evidence, and acceptance criteria demonstrate it.
 
 ## Long-Term Objective
 
