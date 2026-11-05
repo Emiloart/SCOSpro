@@ -129,12 +129,13 @@ The repository is the source of truth for the product constitution, architecture
 - [Interoperability](docs/INTEROPERABILITY.md)
 - [Proactive Operations](docs/PROACTIVE_OPERATIONS.md)
 - [Audit and Execution Roadmap](docs/EXECUTION_ROADMAP.md)
+- [Architecture Decision Records](docs/adr/README.md)
 
 ## Current Status
 
-**Architecture correction and foundation execution.**
+**Architecture correction and initial contract foundation.**
 
-The repository began as a documentation-only baseline. The current milestone is to formalize the expanded product direction and establish versioned domain contracts before building services. No production capability should be described as implemented until code, tests, operational evidence, and acceptance criteria demonstrate it.
+The repository now contains the expanded product constitution, governance and federation specifications, proactive operations model, execution roadmap, initial architecture decision records, six versioned JSON Schema contracts, and a Node-based schema compilation validator. The validator has been committed but has not yet been run in a local environment. No production capability or integration should be described as implemented until code, tests, operational evidence, and acceptance criteria demonstrate it.
 
 ## Long-Term Objective
 
