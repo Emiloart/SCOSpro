@@ -104,13 +104,13 @@ Invariant floors define non-negotiable minimums, maximums or prohibited states. 
 
 Thresholds are specific to the service, resource, jurisdiction and domain. Illustrative values are not global defaults. A mandatory invariant violation blocks the affected action. Advisory findings do not automatically become hard vetoes.
 
-### Tier C — Permitted trade-off envelopes
+### Permitted trade-off envelopes
 
 An envelope identifies the objectives that may be traded, scope, measurable preconditions, bounds, evidence requirements, permitted action classes, duration, monitoring and required authorization.
 
 An envelope cannot waive constitutional constraints, mandatory floors, access controls or required approvals. AUTO_APPROVE is not a permission: automatic execution also requires a separate valid delegation covering the exact action and risk profile.
 
-### Tier D — Unranked or unmapped conflict
+### Tier C — Unranked or unmapped conflict
 
 If options satisfy mandatory constraints but no approved precedence or envelope selects a winner, SCOS does not infer a preference. It prepares a briefing with verified facts, evidence, competing objectives, options, consequences, uncertainty, applicable policy versions, missing rule, affected stakeholders, required decision-maker and deadline.
 
