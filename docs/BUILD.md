@@ -1995,3 +1995,257 @@ That is the system being built.
 ## Architecture Principle
 
 **SCOS Pro should behave less like an AI that a user talks to and more like an operational system that happens to have an AI interface.**
+
+
+---
+
+# 52. Expanded Product Direction: Independent Intelligence Platform
+
+The preceding sections describe the initial personal operations architecture. This section expands and supersedes any narrower interpretation. SCOS Pro is an independent intelligence and execution platform for individuals and organizations. Personal digital-life management remains a major use case, but not the product boundary.
+
+SCOS must own its:
+- product and domain architecture
+- intent and mandate representation
+- model gateway and routing policy
+- council orchestration and decision records
+- policy and authorization system
+- memory and evidence provenance
+- capability registry and federation
+- workflow and execution authority
+- evaluation and quality measurement
+- audit, security, and trust controls
+
+SCOS must also build a staged path toward proprietary models and self-hosted inference. It must not represent API access to third-party models as model independence.
+
+## 52.1 Independence Is a Staged Capability
+
+**Stage A — Control independence:** SCOS owns the complete operating loop even when it calls external models.
+
+**Stage B — Inference independence:** SCOS can serve selected open-weight models on controlled infrastructure and route critical workloads without external API dependence.
+
+**Stage C — Adaptation independence:** SCOS owns curated datasets, evaluations, fine-tuning, preference optimization, distillation, and model release processes.
+
+**Stage D — Proprietary model research:** SCOS develops specialist model families with measurable capability targets.
+
+**Stage E — Foundation-model programme:** pretraining at scale is considered only with a dedicated research, data governance, compute, safety, and capital plan. This is not a prerequisite for shipping the product.
+
+External models remain valuable collaborators and independent evaluators at every stage.
+
+# 53. Intelligence and Model Lifecycle
+
+The former model-router concept is expanded into an internally owned **Intelligence Platform**.
+
+Components:
+
+1. **Model registry:** provider, model/version, modality, context, supported tools, region, data terms, measured quality, cost, latency, and status.
+2. **Model gateway:** normalized requests/responses, policy-aware routing, retries, budgets, quotas, fallback, and telemetry.
+3. **Inference runtime:** external API adapters plus self-hosted serving for selected open-weight and proprietary models.
+4. **Evaluation harness:** task suites, regression, safety, calibration, tool-use, multilingual, latency, and cost measurements.
+5. **Dataset governance:** provenance, consent/licensing, sensitivity, retention, deduplication, quality, contamination controls, and deletion lineage.
+6. **Training pipeline:** reproducible preprocessing, training, fine-tuning, preference optimization, distillation, checkpoint management, and artifact signing.
+7. **Release management:** staged rollout, canary evaluation, rollback, model cards, known limitations, and incident response.
+
+### Initial model strategy
+
+Do not start by training a general foundation model. Start by owning the gateway, evals, and inference control. Establish the tasks where SCOS needs better economics, privacy, latency, or controllability. Self-host suitable open-weight models, then develop narrow proprietary models where internal data and evaluation demonstrate a defensible advantage.
+
+Potential model categories:
+- intent and task classification
+- structured extraction
+- retrieval/reranking
+- tool-use and workflow planning
+- council critique and synthesis
+- speech and multimodal perception
+- domain-specific research or operational models
+
+A model is production-ready only after independent capability, safety, robustness, latency, cost, and regression evaluation.
+
+# 54. Council Governance and Deliberation
+
+The system must support multiple councils with distinct mandates, not a flat swarm of interchangeable agents.
+
+The canonical governance design is in [COUNCIL_GOVERNANCE.md](COUNCIL_GOVERNANCE.md). Council types include intent/context, strategy, technical feasibility, safety/security/privacy, legal/compliance, finance/resources, stakeholder impact, adversarial review, and synthesis.
+
+Councils are dynamically selected according to task impact, uncertainty, reversibility, financial exposure, jurisdiction, affected parties, and time criticality.
+
+The standard protocol is:
+
+```text
+Intent framing
+  → Evidence packet
+  → Independent first-pass assessments
+  → Cross-examination
+  → Option generation
+  → Adversarial falsification
+  → Synthesis with dissent
+  → Deterministic policy evaluation
+  → Human approval where required
+  → Durable execution
+  → Independent verification
+```
+
+Different perspectives must be substantive. Use different model families, separate first-pass assessments, distinct rubrics, and independent evidence retrieval where practical. Do not equate repeated sampling of one model with genuine governance diversity.
+
+No council has production credentials. A council recommendation cannot authorize its own execution.
+
+# 55. Intent, Decision, and Mandate Model
+
+Every significant task begins with a versioned intent envelope containing:
+- principal and tenant
+- objective and desired outcome
+- explicit constraints
+- implied assumptions, labelled as assumptions
+- affected stakeholders
+- deadline and temporal context
+- success and acceptance criteria
+- permitted resources and systems
+- risk tolerance and autonomy mandate
+- unresolved questions
+
+Intent is not inferred from arbitrary untrusted content. The system distinguishes user instructions, organizational policy, delegated authority, and environmental data.
+
+Every material decision becomes a decision record with evidence, council submissions, alternatives, dissent, confidence, policy result, approver, execution reference, and verification result.
+
+# 56. Capability Federation: Celetixo, UTB, and External Models
+
+SCOS must coordinate specialist systems without collapsing their boundaries.
+
+## 56.1 Celetixo
+
+Celetixo is the autonomous software-engineering specialist. SCOS may delegate software and application development for companies or individuals, as well as audits, remediation, integrations, and engineering research.
+
+SCOS owns the business objective and acceptance criteria. Celetixo owns its internal engineering process and state authority. The integration must exchange a scoped task package, progress, clarification requests, artefacts, commits, test evidence, verification results, risks, and delivery state.
+
+SCOS independently validates delivered work against the original intent. A successful tool response or agent assertion is not acceptance evidence.
+
+## 56.2 UTB
+
+UTB is the continuous research and intelligence specialist. SCOS can commission research and subscribe to monitored topics. UTB returns findings with sources, timestamps, evidence, confidence, contradictions, and limitations.
+
+SCOS decides whether the findings change its current inference, recommendation, or plan. Research conclusions must remain traceable to evidence.
+
+## 56.3 External models
+
+External model providers are interchangeable capabilities. They may contribute reasoning, coding, multimodal analysis, extraction, critique, or benchmarking. All requests pass through SCOS's gateway, tenant policy, data handling, budget, and evaluation controls.
+
+## 56.4 Protocols
+
+Use MCP for suitable tool/context integration, A2A for suitable agent-to-agent task exchange, OpenAPI for synchronous service APIs, and event contracts such as CloudEvents/AsyncAPI for asynchronous updates. Protocol use never replaces trust review, authorization, schema validation, provenance, or audit.
+
+The full contract is in [INTEROPERABILITY.md](INTEROPERABILITY.md).
+
+# 57. Proactive Intelligence and Recipient Routing
+
+SCOS must not wait to be summoned for every material issue.
+
+Signals from connected systems, scheduled research, UTB, Celetixo, provider events, deadlines, and internal workflows feed a detection pipeline.
+
+The pipeline:
+1. normalizes and labels the signal
+2. correlates it with context and active goals
+3. detects material changes, risks, opportunities, or obligations
+4. validates evidence and freshness
+5. convenes councils when decision significance warrants it
+6. evaluates urgency, relevance, confidence, and interruption cost
+7. resolves the authorized recipient
+8. communicates through an approved channel
+9. tracks acknowledgement and outcome
+
+For organizations, recipient resolution uses role, process ownership, delegated authority, escalation chain, sensitivity, and need-to-know. Uncertainty must not trigger broad disclosure.
+
+Every surfaced insight should explain what changed, why it matters, evidence, options, recommendation, recipient, and deadline.
+
+Proactive communication is not blanket permission for consequential execution. See [PROACTIVE_OPERATIONS.md](PROACTIVE_OPERATIONS.md).
+
+# 58. Organization and Delegated Authority
+
+Organization mode requires an explicit organizational graph:
+- organization and tenant
+- departments and teams
+- people and service identities
+- roles and responsibilities
+- process/project ownership
+- delegated decision rights
+- budgets and action limits
+- data classification and access
+- escalation paths and temporary delegation
+
+The system must identify the right decision owner, not simply notify the account holder. Role and policy changes must be auditable and effective-dated.
+
+# 59. Updated System Planes
+
+The architecture now has five logical planes:
+
+1. **Experience plane:** web, mobile, browser, command surface, approvals, briefings.
+2. **Control plane:** identity, tenancy, mandates, policy, capability registry, audit, billing.
+3. **Intelligence plane:** model gateway, inference, councils, research, memory, retrieval, evaluation, model lifecycle.
+4. **Execution plane:** Temporal workflows, connectors, specialist systems, browser workers, notifications.
+5. **Trust plane:** authorization, privacy, security, provenance, verification, safety evaluation, compliance controls.
+
+The planes are logical boundaries, not a mandate to create one microservice per component. Start with a modular architecture and extract services only when isolation, scaling, ownership, or reliability requires it.
+
+# 60. Technology Stack Corrections
+
+The previous technology table is a candidate inventory, not a requirement to deploy every product immediately.
+
+Adopt the following discipline:
+
+- **Transactional database:** begin with a well-operated PostgreSQL-compatible relational database unless measured global consistency or scale requirements justify CockroachDB. Keep database access behind repository/domain interfaces.
+- **Search:** establish lexical and semantic retrieval contracts before committing to OpenSearch plus Qdrant as separate operational systems. A simpler initial deployment is acceptable if retrieval quality is measured.
+- **Events:** start with durable workflow events and a transactional outbox. Introduce NATS JetStream when independent consumers and throughput justify it.
+- **Compute:** containerized services first; introduce Kubernetes when workload diversity, isolation, and operational maturity justify EKS.
+- **Workflow:** Temporal remains the preferred durable workflow engine for long-running, approval-bearing operations.
+- **Cache:** Redis only for measured ephemeral/cache needs; never as source of truth.
+- **Model serving:** external providers initially, with a self-hosted inference track. Select serving engines through hardware and model benchmarks rather than committing prematurely.
+- **Languages:** TypeScript for product/control APIs; Python for research, model lifecycle, data and evaluation; Rust or Go for components with measured concurrency, safety, or throughput requirements.
+- **Global deployment:** design tenant home-region and data-residency abstractions early; deploy multiple regions only when operational and legal requirements are ready.
+
+# 61. First End-to-End Proof
+
+The first flagship proof should demonstrate an organization requesting a new application.
+
+1. SCOS captures the objective, sponsor, stakeholders, constraints, and success criteria.
+2. SCOS commissions UTB to research the domain and existing solutions.
+3. Evidence is normalized and attached to an intent packet.
+4. Councils independently assess intent, strategy, technical feasibility, security/privacy, cost, and stakeholder impact.
+5. Adversarial review challenges the leading option.
+6. Synthesis records the recommended decision and dissent.
+7. Policy checks authority, budget, data access, and approvals.
+8. If authorized, SCOS delegates a bounded engineering task to Celetixo.
+9. Celetixo returns progress, artefacts, commits, tests, verification, and known limitations.
+10. SCOS independently validates the deliverable against acceptance criteria.
+11. SCOS proactively communicates decisions, blockers, and completion to the sponsor and authorized stakeholders.
+12. Outcomes are recorded for future evaluation.
+
+This is a proving workflow, not a claim that these integrations already exist.
+
+# 62. Revised Execution Milestones
+
+- **M0:** product constitution, governance, federation, proactive model, architecture corrections.
+- **M1:** monorepo, contracts, CI, API skeleton, configuration, tests, observability.
+- **M2:** identity, tenancy, organizational graph, intent and mandate.
+- **M3:** capability registry, model gateway, provider adapters.
+- **M4:** council orchestration, evidence packets, decision records, evaluation.
+- **M5:** policy, approvals, Temporal workflows, action ledger, verification.
+- **M6:** Celetixo and UTB federation adapters with contract tests.
+- **M7:** connectors, memory, retrieval, event ingestion.
+- **M8:** proactive detection, recipient resolution, notification policy.
+- **M9:** flagship end-to-end delegated application workflow.
+- **M10:** self-hosted inference and proprietary model R&D.
+- **M11:** global, enterprise, and regulated-market readiness.
+
+Every milestone requires tests, security review, observability, documented limitations, acceptance criteria, and a commit.
+
+# 63. Immediate Engineering Priorities
+
+The repository is still documentation-only. The next work is not to deploy the entire proposed cloud stack. It is to create a small, testable foundation around canonical contracts.
+
+Start with:
+1. JSON Schemas for intent, evidence, council submission, decision, capability, authorization, and execution receipt.
+2. Contract validation and compatibility tests.
+3. Modular control-plane API.
+4. Deterministic policy boundary.
+5. Audit event envelope.
+6. Model and capability adapter interfaces.
+
+Only after those contracts stabilize should implementation expand into agents, connectors, and infrastructure.
