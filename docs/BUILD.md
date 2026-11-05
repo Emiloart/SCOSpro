@@ -2299,3 +2299,61 @@ The repository now has the beginnings of an executable contract layer. It does n
 - production connectors or deployment infrastructure
 
 These remain explicit implementation work, not implied capabilities.
+
+
+# 65. Strategic Policy and Authority Foundation
+
+This is a product-wide requirement, not a software-deployment-only feature.
+
+## 65.1 Four separate governance concepts
+
+1. **Constitutional constraints:** non-waivable requirements such as identity integrity, tenant isolation, privacy and mandatory obligations.
+2. **Strategic objectives:** human-authored outcomes, priorities, time horizons and acceptable trade-offs.
+3. **Operational policies / SPM:** versioned, scoped, machine-readable rules applying objectives and constraints to domains, resources and actions.
+4. **Delegated authority:** explicit permission for an identified principal or system to authorize or perform a defined action within limits.
+
+A priority does not grant permission. A policy envelope does not replace a delegation. A council recommendation is not authorization.
+
+## 65.2 Governance and verification path
+
+~~~text
+Common context + mandate-specific evidence
+                 ↓
+       Independent assessments
+                 ↓
+    Arguments with evidence references
+                 ↓
+       Independent verification
+                 ↓
+ Factual | Inferential | Objective dispute
+                 ↓
+ Constitutional and mandatory constraints
+                 ↓
+ Active SPM + scope + risk + delegation
+                 ↓
+ Authorize | Revise | Evidence | Defer | Escalate | Reject
+                 ↓
+         Durable execution
+                 ↓
+      Independent verification
+~~~
+
+Argumentation graphs resolve attacks on premises and inference links; they do not rank unrelated strategic objectives. Objective conflicts are resolved by ratified policy or human authorization.
+
+## 65.3 Scope and risk
+
+Scope is established from trusted metadata such as authenticated tenant, resource identity, deployment target, environment registry, data classification, action type and effective delegation. Models may suggest but cannot authoritatively classify or downgrade scope.
+
+Actions carry a multidimensional risk profile: impact, scope, reversibility, exposure, sensitivity, duration and authority. Policy maps the profile to required review, authorization and safeguards. A model-generated scalar is not the authorization basis.
+
+## 65.4 SPM lifecycle
+
+Only an active, schema-valid, integrity-protected, effective and ratified manifest is authoritative. SCOS may recommend changes when evidence shows existing assumptions are failing. It cannot promote a candidate policy or infer a new strategic hierarchy from repeated choices.
+
+A one-time human approval authorizes only the specified decision unless a separate policy-change process is explicitly initiated and ratified by the correct owner.
+
+## 65.5 Domain independence
+
+The policy model supports personal and organizational operation across finance, research, communications, procurement, projects, software, operations and future domains. Software infrastructure examples are illustrative, not global defaults. Numeric floors and objective vectors must be authored for the actual service, domain, jurisdiction and principal.
+
+See [Strategic Policy Governance](STRATEGIC_POLICY_GOVERNANCE.md). This architecture is not yet implemented by the current repository.

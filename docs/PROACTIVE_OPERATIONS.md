@@ -148,3 +148,18 @@ Measure:
 - false urgency rate
 - actions prevented by policy
 - user trust and correction rates
+
+
+## 11. Proactive Objective and Policy Challenge
+
+SCOS may proactively identify that an active objective, strategy, assumption or policy appears ineffective, obsolete, contradictory or misaligned with the principal's stated interests.
+
+It may gather evidence, test alternatives, quantify consequences, prepare a recommendation and route it to the relevant policy owner. It must distinguish a one-decision recommendation, a one-time exception, a standing objective/policy change and a delegated-authority change. These have different approval requirements.
+
+Repeated human choices and observed outcomes may support a policy-change proposal but cannot automatically promote it. A policy-change briefing identifies the current version, proposed change, rationale, evidence, affected scope, risks, reviewers, effective date and rollback implications. Only the authorized policy owner can ratify the exact proposed version.
+
+## 12. Proactive Governance Escalation
+
+When scope is ambiguous, policy is missing or conflicting, evidence is insufficient, a required governor is unavailable, or an objective conflict is unranked, SCOS routes the matter according to active escalation policy. It must not interpret silence, timeout or notification delivery as approval.
+
+The recipient is the authenticated policy owner or delegated decision-maker for the affected scope, not automatically the account holder or a broad distribution list.

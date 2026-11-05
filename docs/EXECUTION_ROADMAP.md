@@ -238,3 +238,33 @@ Each milestone requires:
 Implement M1 only after the domain contracts in this repository are reviewed and stable enough to encode. Start with the control-plane contracts and a minimal API service. Do not begin with a large agent swarm, all integrations, or a multi-region Kubernetes deployment.
 
 The first goal is a small, testable, observable core that can represent intent, evidence, deliberation, policy decisions, capability delegation, and verified outcomes.
+
+
+## 9. Governance Foundation Work Before Runtime Authorization
+
+These are prerequisites and acceptance gates, not claims of completed runtime capability.
+
+### G0 — Policy authority and manifest specification
+
+- Separate constitutional constraints from strategic objectives.
+- Define SPM ownership, ratification, activation, expiry and rollback.
+- Define policy composition and conflict behavior.
+- Define trusted scope-classification sources and ambiguity handling.
+- Define multidimensional risk profile and policy mapping.
+- Define non-consent, unavailable and insufficient-evidence states.
+- Document Tier A precedence, Tier B invariant and Tier C unranked trade-off examples.
+- Define policy-change proposal and human ratification process.
+
+**Exit criteria:** policy owners, scope sources, composition rules and manifest structure are reviewed. No invented organization-wide priority values are treated as approved policy.
+
+### G1 — Governance contracts and deterministic test vectors
+
+Before runtime policy resolution, specify versioned contracts for common decision context, mandate-specific evidence references, structured arguments, verification results, disagreement classification, trusted scope, risk profiles, SPM, approvals, exceptions and policy activation evidence.
+
+Add positive, negative, ambiguous, conflicting and stale-evidence test vectors. Prove that model consensus, missing responses and unratified policy cannot authorize actions.
+
+### Dependency and sequencing correction
+
+The scope registry, policy ownership and constitutional constraints must exist before the policy resolver can be authoritative. An SPM must be ratified before deployment-specific objective hierarchies are used for live decisions. Deliberation may be prototyped with advisory outputs before enforcement exists, but it must not execute consequential actions.
+
+G0 and G1 refine the acceptance gates of M1–M5; they do not imply that the control plane, verification engine or policy resolver already exists.

@@ -179,3 +179,14 @@ No provider receives preference solely because it is the default. SCOS should su
 ## 9. No Lock-In
 
 Provider adapters and normalized domain contracts are mandatory. SCOS should be able to replace Celetixo, UTB, or any model provider without rewriting its core governance and workflow systems. The named collaborators are strategic integrations, not hard-coded dependencies.
+
+
+## 10. Delegation Does Not Transfer Strategic or Policy Authority
+
+A federated specialist may receive a bounded task, relevant context, approved data and a scoped capability grant. It does not inherit SCOS's strategic policy ownership, tenant authority, user relationship or permission to amend the SPM.
+
+Provider recommendations and results are evidence inputs. They remain untrusted until provenance, integrity, scope and acceptance criteria are checked. A provider cannot expand its own capability grant or convert untrusted task content into authority.
+
+Every delegated action remains traceable to the originating intent and decision, applicable scope classification, active policy version, capability grant, required human authorization, execution receipt and independent acceptance result.
+
+SCOS retains responsibility for deciding whether a delegated result satisfies the original objective and whether subsequent action is authorized.

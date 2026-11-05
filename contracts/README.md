@@ -25,3 +25,14 @@ This directory contains versioned, language-neutral contracts shared by SCOS ser
 ## Trust rule
 
 A valid schema does not make content trustworthy. Authentication, authorization, provenance, tenant isolation, policy evaluation, and semantic validation remain mandatory.
+
+
+## Governance architecture references
+
+The governance model is specified in:
+- [Strategic Policy, Authority and Scope Governance](../docs/STRATEGIC_POLICY_GOVERNANCE.md)
+- [Council Governance and Deliberation](../docs/COUNCIL_GOVERNANCE.md)
+
+The existing six JSON Schemas are an initial contract foundation. They do not yet encode the complete structured-argument, evidence-verification, scope-classification, risk-profile, SPM-ratification or policy-composition model. Those contract extensions must be designed and versioned before a runtime policy resolver is treated as authoritative.
+
+Do not infer that these contracts or services exist because their architecture is documented. A schema is not an authorization grant, and a policy decision payload is not proof that a real enforcement point checked the underlying permissions.

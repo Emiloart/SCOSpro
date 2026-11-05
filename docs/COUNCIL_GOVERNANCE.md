@@ -222,3 +222,63 @@ Council agents receive no general-purpose production credentials.
 They may request a proposed action through a typed interface. The policy engine evaluates it. The workflow system executes it. The verifier checks it. The audit service records it.
 
 No council can directly send email, transfer money, modify production infrastructure, or mutate connected accounts merely because it recommends doing so.
+
+
+## 10. Structural Independence and Shared Context
+
+Council diversity arises from distinct mandates, evidence needs, evaluation criteria and, where useful, different model/provider lineages. Persona wording alone is insufficient.
+
+Every governor receives a common decision context: objective, proposed action, scope, affected assets or stakeholders, relevant constraints and evidence references. It may additionally receive mandate-specific evidence, such as IAM and threat evidence for security, dependency and test evidence for architecture, or budget and success measures for value assessment.
+
+Context asymmetry is not deliberate blindness. A governor must receive enough common context to understand the matter. No governor is required to disagree; manufactured dissent is a defect.
+
+## 11. Structured, Verifiable Arguments
+
+A material argument identifies its premise, retrievable evidence reference and provenance, rule or reasoning principle, applicability, conclusion or objection, attack target and resolution state.
+
+A structured assertion is not automatically true. The submitting governor does not establish its own evidence. Independent verification checks evidence integrity, source authority, freshness and rule applicability where feasible.
+
+Argument attacks distinguish:
+- **Premise challenge:** disputes the underlying fact or evidence.
+- **Rebuttal:** supplies a competing claim or conclusion.
+- **Undercut:** challenges the inference link or applicability of a rule.
+
+Original submissions, verification results, counterarguments and revisions are preserved.
+
+## 12. Disagreement Classification
+
+The verification stage classifies disagreements as:
+1. **Factual:** claims about the state of the world conflict.
+2. **Inferential:** accepted facts are interpreted differently or a rule's applicability is disputed.
+3. **Objective:** facts and defensible inferences coexist, but legitimate goals compete.
+
+Argumentation frameworks can resolve premise and inference attacks. They do not decide the priority of unrelated objectives. Objective conflicts use the active, authorized SPM or escalate to the appropriate human decision-maker.
+
+## 13. Four-Stage Resolution
+
+1. **Independent assessment:** task-appropriate governors assess common and mandate-specific context.
+2. **Evidence and argument verification:** validate provenance, freshness, factual claims, rule applicability and dispute category.
+3. **Authority and policy resolution:** enforce mandatory constraints, evaluate trusted scope and action-risk profile, then apply active policy and delegated authority.
+4. **Disposition:** authorize only within valid delegation; otherwise return for revision, request evidence, defer, reject or escalate.
+
+No majority vote overrides a mandatory invariant, permission denial, tenant boundary, invalid state transition or required approval.
+
+## 14. Deterministic Findings and Veto Classification
+
+A deterministic result is not automatically a hard veto. Mandatory invariant failures, identity or permission denials, tenant violations, invalid contracts and prohibited state transitions block the affected action. Advisory static-analysis findings, heuristic anomalies and non-blocking warnings are classified under policy and may require investigation rather than an absolute stop.
+
+The blocking/advisory classification is policy-owned and testable. Model consensus cannot change it.
+
+## 15. Non-Consent and Incomplete Deliberation
+
+Council outputs distinguish support, objection, conditional support, insufficient evidence, out-of-scope and unavailable. Verification distinguishes verified, partially verified, contradicted, stale and unresolved.
+
+Silence, timeout, unavailable governors or missing evidence never constitute approval. If required review cannot be completed, the policy's explicit defer, reject or escalation route applies.
+
+## 16. Objective Resolution and Risk
+
+Objective conflicts use approved scope-specific precedence, invariant floors and permitted trade-off envelopes. An unranked or unmapped trade-off is presented to an authorized human; synthesis must not infer a preference.
+
+Risk is a deterministic, evidence-backed profile covering impact, scope, reversibility, exposure, sensitivity, duration and authority. It informs review and authorization but does not grant permission.
+
+See [Strategic Policy, Authority and Scope Governance](STRATEGIC_POLICY_GOVERNANCE.md) for the normative model and Tier A, B and C examples.

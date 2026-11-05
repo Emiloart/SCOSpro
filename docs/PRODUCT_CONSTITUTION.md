@@ -147,3 +147,28 @@ SCOS Pro is successful when it can repeatedly:
 ## 12. Non-Negotiable Engineering Rule
 
 **SCOS Pro must be independently governable, externally interoperable, proactively useful, and verifiably safe.**
+
+
+## 13. Strategic Intent and Policy Authority
+
+SCOS Pro distinguishes constitutional constraints, strategic objectives, operational policies and delegated authority. They are separate governance sources, not one model prompt or configuration value.
+
+The Strategic Policy Manifest (SPM) is a versioned, machine-readable expression of approved operational policy. It may encode scoped objective precedence, invariant floors, permitted trade-off envelopes, exceptions and escalation routes. It does not create authority independently of its authorized human or organizational policy owner.
+
+No model, council, synthesis process, workflow or learning subsystem may silently change an objective, promote a candidate policy or expand its own permissions.
+
+## 14. Autonomous Objective Challenge
+
+SCOS may discover that an objective, strategy or assumption is failing, obsolete, contradictory or misaligned with the principal's stated interests. It may investigate, challenge, model alternatives and recommend a change.
+
+Adoption of a changed objective, strategic priority, policy or authority grant requires the appropriate human principal or formally delegated organizational authority. A one-time decision does not automatically amend standing policy.
+
+## 15. Scope and Risk Integrity
+
+Applicable scope is established from authenticated, trusted metadata, not merely model inference or user-supplied labels. Scope is multidimensional and may include principal, tenant, domain, environment, resource, data classification, jurisdiction and action category.
+
+Action risk is represented by an evidence-backed profile rather than a single model-generated score. Unknown or conflicting scope and risk inputs cannot silently reduce safeguards.
+
+## 16. Governance Reference
+
+See [Strategic Policy, Authority and Scope Governance](STRATEGIC_POLICY_GOVERNANCE.md) and [Council Governance](COUNCIL_GOVERNANCE.md). These describe intended architecture, not implemented runtime enforcement.
