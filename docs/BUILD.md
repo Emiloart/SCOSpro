@@ -2249,3 +2249,53 @@ Start with:
 6. Model and capability adapter interfaces.
 
 Only after those contracts stabilize should implementation expand into agents, connectors, and infrastructure.
+
+
+---
+
+# 64. Repository Execution Record — 2026-11-05
+
+The repository has moved beyond the documentation-only baseline.
+
+## Completed in this milestone
+
+- Product constitution covering independence, interoperability, governance, proactive operation, and authority boundaries.
+- Multi-council governance and deliberation protocol.
+- Capability federation contract and explicit Celetixo/UTB roles.
+- Proactive intelligence and organizational recipient-routing specification.
+- Audit and staged execution roadmap.
+- Four proposed ADRs covering modular architecture, council deliberation, capability federation, and staged model independence.
+- Six JSON Schema Draft 2020-12 contracts:
+  - intent envelope
+  - council assessment
+  - decision record
+  - capability manifest
+  - policy decision
+  - execution receipt
+- Root Node project manifest and a schema compilation validation script using Ajv.
+
+## Validation status
+
+All six schema files and the root package manifest were fetched back from GitHub and parsed successfully as JSON. This confirms JSON syntax only. The Ajv compilation script has not yet been executed in a provisioned Node environment; schema validity and runtime behaviour remain to be confirmed by running:
+
+```bash
+npm install
+npm run contracts:check
+```
+
+Do not mark M1 complete until the command succeeds in CI and the contract suite includes valid and invalid example payloads.
+
+## Current boundary
+
+The repository now has the beginnings of an executable contract layer. It does not yet contain:
+- a running API
+- identity or tenant enforcement
+- council orchestration runtime
+- policy decision service
+- Temporal workflows
+- Celetixo or UTB adapters
+- model gateway or self-hosted inference
+- application UI
+- production connectors or deployment infrastructure
+
+These remain explicit implementation work, not implied capabilities.
