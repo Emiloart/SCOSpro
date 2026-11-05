@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://scos.pro/schemas/intent-envelope.v1.schema.json",
+  "title": "SCOS Intent Envelope v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "intent_id", "tenant_id", "principal", "objective", "created_at", "constraints", "success_criteria", "autonomy_mandate"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "intent_id": { "type": "string", "minLength": 8, "maxLength": 128 },
+    "tenant_id": { "type": "string", "minLength": 1, "maxLength": 128 },
+    "principal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["principal_id", "principal_type"],
+      "properties": {
+        "principal_id": { "type": "string", "minLength": 1 },
+        "principal_type": { "enum": ["user", "organization", "service"] },
+        "organization_id": { "type": "string" },
+        "role_id": { "type": "string" }
+      }
+    },
+    "objective": { "type": "string", "minLength": 1, "maxLength": 12000 },
+    "desired_outcome": { "type": "string", "maxLength": 12000 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "deadline": { "type": ["string", "null"], "format": "date-time" },
+    "stakeholders": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
+    "constraints": { "type": "array", "items": { "type": "object", "additionalProperties": false, "required": ["kind", "statement"], "properties": { "kind": { "enum": ["hard", "soft", "assumption", "unknown"] }, "statement": { "type": "string", "minLength": 1 }, "source_ref": { "type": "string" } } } },
+    "success_criteria": { "type": "array", "minItems": 1, "items": { "type": "object", "additionalProperties": false, "required": ["criterion_id", "description"], "properties": { "criterion_id": { "type": "string" }, "description": { "type": "string", "minLength": 1 }, "verification_method": { "type": "string" } } } },
+    "allowed_capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "excluded_capabilities": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "budget": { "type": ["object", "null"], "additionalProperties": false, "required": ["amount", "currency"], "properties": { "amount": { "type": "number", "minimum": 0 }, "currency": { "type": "string", "pattern": "^[A-Z]{3}$" }, "approval_required_above": { "type": "number", "minimum": 0 } } },
+    "data_classification": { "enum": ["public", "internal", "confidential", "restricted"] },
+    "allowed_regions": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+    "autonomy_mandate": { "enum": ["observe", "draft", "propose", "bounded_execute", "delegated_execute"] },
+    "approval_policy_ref": { "type": "string" },
+    "correlation_id": { "type": "string" },
+    "parent_intent_id": { "type": "string" }
+  }
+}
